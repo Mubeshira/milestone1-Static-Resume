@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    margin-top: 60px;
+    background-color: rgb(226, 226, 182); 
+}
+#maindiv{
+    width: 60%;
+    padding: 28px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    border: 5px solid;
+}
+img{
+    width: 200px; 
+    border-radius: 50%;
+}
+.personal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal h1{
+    font-size: 60px;
+}
+
+.personal h2{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.spaceBt{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+.para{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+}
+.heading{
+    font-size: 30px;
+    background-color: rgb(168, 226, 150);
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.contPara{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+#skillsec ul{
+    margin-left: 25px;
+}
+#Btndiv{
+    
+    width: 60%;
+    padding: 28px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    background-color: rgb(137, 217, 217);
+    border: 4px solid;
+    flex-direction: column;
+    text-transform: uppercase;
+    
+}
+.btn{
+    width: auto;
+    height: 40px;
+    font-size: 17px;
+    font-weight:600 ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sp{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.btn:active{
+    transform: scale(1.02);
+    background-color: rgba(93, 93, 135, 0.79);
+}
+#ObjectiveSec{
+    display: block;
+}
+#eduSec{
+    display: block;
+}
+#skillsec{
+    display: block;
+}
+#workexpSec{
+    display: block;
+}

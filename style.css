@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top:80px ;
+    background: linear-gradient(rgba(78, 33, 238, 0.784),rgba(131, 5, 5, 0.74));
+}
+.headingStyle{
+    width: 90%;
+    border: 0px solid;
+    border-radius: 10px;
+    margin-top: 60px;
+    padding: 20px;
+    margin: auto;
+}
+.myHeading{
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+#header h2{
+    font-size: 40px;
+}
+ #main{
+     /* margin-left: 5%;
+    margin-right:  5%;  */
+     text-align: center;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3% ;
+    padding-right: 3%;
+    margin-top: 30px;
+    
+}
+
+.p40{
+    padding: 40px;
+}
+.round{
+    border-radius: 50px;
+}
+.anchor{
+    font-size: 35 px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+.img{
+    width: 400px;
+    border-radius: 20px;
+
+}
+.para{
+    font-size: 25px;
+    margin-top: 20px;
+    
+}
+ .zoom{
+    transform: scale(1);
+}
+.zoom :hover{
+    transform: scale(1.02);
+} 
+footer p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.border{
+    border: 4px solid;
+    border-radius: 40px;
+}
