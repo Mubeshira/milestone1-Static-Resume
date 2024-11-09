@@ -1,44 +1,56 @@
-*{
+
+
+/* Base styling */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;     
+    align-items: center;
     margin-top: 60px;
-    background-color: rgb(226, 226, 182); 
+    background-color: rgb(226, 226, 182);
 }
-#maindiv{
+
+/* Main container */
+#maindiv {
     width: 60%;
     padding: 28px;
     border-radius: 30px;
     margin-bottom: 30px;
     border: 5px solid;
+    background-color: white;
 }
-img{
-    width: 200px; 
+
+img {
+    width: 200px;
     border-radius: 50%;
 }
-.personal{
+
+/* Personal information section */
+.personal {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.personal h1{
-    font-size: 60px;
+.personal h1 {
+    font-size: 2.5rem;
 }
 
-.personal h2{
-    font-size: 30px;
+.personal h2 {
+    font-size: 1.5rem;
     margin-top: 5px;
     margin-left: 20px;
 }
-.spaceBt{
+
+/* Section styling */
+.spaceBt {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -46,71 +58,129 @@ img{
     border-top: 2px solid;
     border-bottom: 2px solid;
 }
-.para{
+
+.para {
     display: inline-block;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 600;
 }
-.heading{
-    font-size: 30px;
+
+.heading {
+    font-size: 1.5rem;
     background-color: rgb(168, 226, 150);
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 2px solid;
+}
 
+.contPara {
+    font-size: 1.125rem;
+    margin: 10px 0 5px 10px;
 }
-.contPara{
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
-#skillsec ul{
+
+/* Skills section list */
+#skillsec ul {
     margin-left: 25px;
 }
-#Btndiv{
-    
+
+/* Button container */
+#Btndiv {
     width: 60%;
     padding: 28px;
     border-radius: 30px;
     margin-bottom: 30px;
     display: flex;
-    text-align: center;
+    align-items: center;
+    flex-direction: column;
     background-color: rgb(137, 217, 217);
     border: 4px solid;
-    flex-direction: column;
     text-transform: uppercase;
-    
-}
-.btn{
-    width: auto;
-    height: 40px;
-    font-size: 17px;
-    font-weight:600 ;
-    padding: 10px;
-    border-radius: 5px;
 }
 
-.sp{
+.btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sp {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
-.btn:active{
+
+.btn:active {
     transform: scale(1.02);
     background-color: rgba(93, 93, 135, 0.79);
 }
-#ObjectiveSec{
-    display: block;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #maindiv, #Btndiv {
+        width: 80%;
+    }
+
+    .personal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personal h1 {
+        font-size: 2rem;
+    }
+
+    .personal h2 {
+        font-size: 1.25rem;
+    }
+
+    .spaceBt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .para, .contPara, .heading {
+        font-size: 1rem;
+    }
 }
-#eduSec{
-    display: block;
+
+@media (max-width: 480px) {
+    #maindiv, #Btndiv {
+        width: 90%;
+    }
+
+    img {
+        width: 150px;
+    }
+
+    .personal h1 {
+        font-size: 1.5rem;
+    }
+
+    .personal h2 {
+        font-size: 1rem;
+    }
+
+    .heading {
+        font-size: 1.25rem;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 0.875rem;
+        padding: 8px 15px;
+    }
+
+    .contPara, .para {
+        font-size: 0.875rem;
+    }
 }
-#skillsec{
-    display: block;
-}
-#workexpSec{
-    display: block;
+
+@media (max-width: 320px) {
+    #maindiv, #Btndiv {
+        width: 100%;
+    }
 }

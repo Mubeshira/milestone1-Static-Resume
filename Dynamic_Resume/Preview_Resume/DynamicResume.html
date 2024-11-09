@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="DynamicStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="maindiv" style="background-color: rgba(65, 55, 246, 0.544);">
+        <!-- Personal Information -->
+        <section  >
+            <div class="personal">
+            <div >
+                <h1><span id="form_name">Mubeshira</span></h1>
+                <h2><span id="jobTitle"> </span></h2>
+            </div>
+            <img id="profilePicPreview" src="" alt="Profile Picture">
+            </div>
+
+            <div  class="contact-info" style="background-color: rgb(238, 165, 215);">
+                <p class="para"> <i class="fa-solid fa-phone"></i>Phone: <span id="phone">03219874322 </span></p>
+                <p class="para"> <i class="fa-solid fa-envelope"></i>Email: <span id="email">mubeshira.saad2016@hotmail.com</span></p>
+                <p class="para"> <i class="fa-brands fa-linkedin"></i>Linkedin: <span id="linkedin">Mubeshira001</span></p>
+            </div>
+        </section>
+          <!-- Objective -->
+
+          <section id="ObjectiveSec">
+            <h2 class="heading">Objective</h2>
+            <p class="contPara">Self-motivated web developer with one year of experience seeking a position 
+                as a lead web developer with Next Generation Web Development where I can apply my advanced knowledge of web design with my leadership abilities to meet client needs and exceed their expectation.</p>
+          </section>
+        <!-- Education -->
+         <section id="eduSec">
+            <h2 class="heading">Education:</h2>
+            <p class="contPara"><span id="degree">Masters in International Relation</span></p>
+            <p class="contPara"> <span id="university"> XYZ University </span> , <span id="gradYear"> 2016 </span></p>
+
+         </section>
+         <!-- Skills -->
+          <section  id="skillsec">
+            <h2 class="heading">Skills:</h2>
+            <ul>
+                <li><span id="skill1" class="contPara">Typescript</span></li>
+                <li><span id="skill2" class="contPara">HTML & CSS</span></li>
+                <li><span id="skill3" class="contPara">Javascript</span></li>
+            </ul>
+
+          </section>
+        <!-- Work Experience -->
+          <section id="workExpSec" class="work-experience">
+            <h2 class="heading">Work Experience:</h2>
+            <p class="contPara"><span id="jobTitleExp">Junior Developer</span> at <span id="company">ABC Company</span> ,<span id="startYear"> 2021 </span> - <span id="endYear">Present </span> </p>
+          </section>
+    </div>
+    <!-- Buttons -->
+
+    <div id="btnDiv">
+      <button class="btn" id="ptintBtn">Print</button>
+      <button class="btn" id="editBtn">Edit</button>
+      <div class="share-container">
+        <a href="#" id="resumeLink" class="btn">Shareable Resume Link</a>
+        <button class="btn" id="copyLinkBtn">Copy Link</button>
+      </div>
+    </div>
+    <script src="DynamicResume.js"></script>
+<!-- <script src="../manipulationScript.js"></script> -->
+
+</body> 
+</html>

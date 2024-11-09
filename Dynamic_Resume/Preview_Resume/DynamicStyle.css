@@ -1,0 +1,165 @@
+
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: rgb(226, 226, 182);
+}
+
+/* Main container */
+#maindiv {
+    width: 60%;
+    padding: 28px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    border: 5px solid;
+}
+
+/* Image styling */
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 40%;
+}
+
+/* Personal information section */
+.personal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal h1,
+.personal h2 {
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+/* Contact information */
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.contact-info .para {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Heading styling */
+.heading {
+    font-size: 24px;
+    background-color: rgb(168, 226, 150);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Content paragraph */
+.contPara {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Skill section list styling */
+#skillsec ul {
+    margin-left: 25px;
+}
+
+/* Button styling */
+.btn {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Button container styling */
+.sp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #maindiv, #btnDiv {
+        width: 90%;
+    }
+
+    .personal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        margin-top: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Additional button container styling */
+#btnDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: 4px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btnDiv .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#btnDiv .btn:hover {
+    background-color: #00786b;
+}
+
+/* Hide button container on print */
+@media print {
+    #btnDiv {
+        display: none;
+    }
+}
